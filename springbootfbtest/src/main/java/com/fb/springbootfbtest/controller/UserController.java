@@ -39,7 +39,6 @@ public class UserController {
     @RequestMapping(value = "getUserList")
     @ResponseBody
     public List<User> getUserList(@RequestBody User uu) {
-        System.out.println("haha");
         return userService.search(uu);
     }
 
