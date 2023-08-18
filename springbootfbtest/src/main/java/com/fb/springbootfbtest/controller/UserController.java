@@ -44,6 +44,7 @@ public class UserController {
 
     @RequestMapping(value = "hh")
     public void hh() {
+        System.out.println("third");
     }
 
     @RequestMapping(value = "h")
