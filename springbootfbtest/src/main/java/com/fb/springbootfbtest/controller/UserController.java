@@ -21,6 +21,7 @@ public class UserController {
     @RequestMapping("testconsul")
     @ResponseBody
     public String test() {
+        System.out.println("fouth");
         return "fuck!";
     }
 
