@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: consul-fb-consumer
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        serviceName: ${spring.application.name}
+        heartbeat:
+          enabled: true
+
+provider:
+  url: http://consul-fb-provider/fbdev/te/testconsul
+
+provider1:
+  url1: http://consul-fb-provider/fbdev/te/testconsul1
+
+provider2:
+  url2: http://consul-fb-provider/fbdev/te/testconsul2
