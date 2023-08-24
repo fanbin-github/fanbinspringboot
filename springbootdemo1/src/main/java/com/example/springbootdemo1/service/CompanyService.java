@@ -10,6 +10,8 @@ public interface CompanyService {
 
     User getEmpResult2();
 
+    String getResultByResilience();
+
 
 
 }
